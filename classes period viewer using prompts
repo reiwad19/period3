@@ -1,0 +1,8 @@
+var period1 = prompt("Please enter your first period");
+var period2 = prompt("Please enter your second period");
+var period3 = prompt("Please enter your third period");
+var period4 = prompt("Please enter your fourth period");
+var period5 = prompt("Please enter your fifth period");
+var period6 = prompt("Please enter your sixth period");
+var period7 = prompt("Please enter your seventh period");
+window.alert("Your classes in order are..." + period1 + period2 + period3 + period4 + period5 + period6 + period7);
