@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      function showAnswer() {
+var a = x.value;
+var b = y.value;
+var c = Math.pow(a,2) + Math.pow(b,2);
+document.getElementById('hi').innerHTML = Math.sqrt(c)
+}
+    </script>
+    <h1>A:</h1>
+<input type="text" id="x">
+<h1>B:</h1>
+<input type="text" id="y">
+<br>
+<button onclick="showAnswer()">Show answer</button>
+<p id ='hi'></p>
+
+    
+  </body>
+</html>
