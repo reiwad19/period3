@@ -1,0 +1,19 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      function sphereV() {
+      var num1 = document.getElementById('radius').value;
+      var num1 = Math.pow(num1, 3);
+      var num1 = parseInt(num1);
+      var step1 = (4/3 * 3.14);
+      var step2 = (step1 * num1);
+      
+      document.getElementById('sumHere').innerHTML = step2;
+      }
+    </script>
+      <input type="number" id="radius">
+      <button onclick="sphereV()">Add the two numbers</button>
+      <h1 id="sumHere"></h1>
+  </body>
+</html>
