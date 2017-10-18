@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <style>
+    body {
+      background-image: url("https://33.media.tumblr.com/378e6b25e3ac7c826ef27a2aa8d09c65/tumblr_nkhn0hm0lM1tah9pwo3_1280.gif");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .topbar {
+      overflow: hidden;
+      
+      position: fixed;
+      top: 0;
+      width: 100%;
+      left: 40%;
+    }
+      #roomOne {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      width: 200px;
+      height: 300px;
+      background-color: white;
+      float: left;
+      opacity: 0.8;
+      border-radius: 25px;
+    }
+      #roomTwo {
+      position: absolute;
+      top: 100px;
+      left: 275px;
+      width: 200px;
+      height: 300px;
+      background-color: white;
+      float: left;
+      opacity: 0.8;
+      border-radius: 25px;
+    }
+      #roomThree {
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        float: left;
+        opacity: 0.8;
+        border-radius: 25px;
+      }
+      #roomFour {
+        position: absolute;
+        top: 100px;
+        left: 725px;
+        width: 200px;
+        height: 300px;
+        background-color: white;
+        float: left;
+        opacity: 0.8;
+        border-radius: 25px;
+    }
+     p {
+       font-size: 30px;
+       font-weight: bold;
+     }
+     h1 {
+       color: white;
+       font-size: 40px;
+     }
+    
+    </style>
+    <script>
+      g = 0;
+      h = 0;
+      p = 0;
+      j = 0;
+      k = 0;
+     function addRmOne() {
+        
+        if (g < 4 ) {
+  
+        var newGuest = document.createElement('li');
+        var newText = document.createTextNode(a.value);
+        newGuest.appendChild(newText);
+        var position = document.querySelectorAll('ol.guestListOne')[0];
+        position.appendChild(newGuest);
+        g++;
+        }
+        else {
+          
+        }
+    }
+      function removeRmOne() {
+        var b = prompt("Enter Guest index number");
+        var removeGuest = document.getElementsByTagName('li')[b];
+        var position1 = removeGuest.parentNode;
+        position1.removeChild(removeGuest);
+        g--;
+    }
+     function addRmTwo() {
+        
+        if (h < 4) {
+          var newGuestA = document.createElement('li');
+          var newTextA = document.createTextNode(c.value);
+          newGuestA.appendChild(newTextA);
+          var positionA = document.querySelectorAll('ol.guestListTwo')[0];
+          positionA.appendChild(newGuestA);
+          h++;
+        }
+        else {
+          
+        }
+    }
+      function removeRmTwo() {
+        var d = prompt("Enter Guest index number");
+        var removeGuestA = document.getElementsByTagName('li')[d];
+        var positionA = removeGuestA.parentNode;
+        positionA.removeChild(removeGuestA);
+        h--;
+    }
+      function addRmThree() {
+        
+        if (p < 4) {
+          var newGuestB = document.createElement('li');
+          var newTextB = document.createTextNode(hi.value);
+          newGuestB.appendChild(newTextB);
+          var positionB = document.querySelectorAll('ol.guestListThree')[0];
+          positionB.appendChild(newGuestB);
+          p++;
+        }
+        else {
+          
+        }
+    }
+      function removeRmThree() {
+        var e = prompt("Enter Guest index number");
+        var removeGuestB = document.getElementsByTagName('li')[e];
+        var positionB = removeGuestB.parentNode;
+        positionB.removeChild(removeGuestB);
+        p--;
+    }
+      function addRmFour() {
+        
+        if (j < 4 ) {
+  
+        var newGuestC = document.createElement('li');
+        var newTextC = document.createTextNode(w.value);
+        newGuestC.appendChild(newTextC);
+        var positionC = document.querySelectorAll('ol.guestListFour')[0];
+        positionC.appendChild(newGuestC);
+        j++;
+        }
+        else {
+          
+        }
+    }
+      function removeRmFour() {
+        var q = prompt("Enter Guest index number");
+        var removeGuestC = document.getElementsByTagName('li')[q];
+        var positionC = removeGuestC.parentNode;
+        positionC.removeChild(removeGuestC);
+        j--;
+    }
+    </script>
+  </head>
+  <body>
+    <div class="topbar">
+      <h1>Reimon's Hotel</h1>
+    </div>
+    
+    <div id="roomOne">
+      <p>Room One</p>
+      <input type="text" id="a">
+      <button onclick="addRmOne()">Add Guest</button>
+      <button onclick="removeRmOne()">Remove Guest</button>
+      <ol class="guestListOne" id="one"></ol>
+    </div>
+    <div id="roomTwo">
+      <p>Room Two</p>
+      <input type="text" id="c">
+      <button onclick="addRmTwo()">Add Guest</button>
+      <button onclick="removeRmTwo()">Remove Guest</button>
+      <ol class="guestListTwo"></ol>
+    </div>
+    <div id="roomThree">
+      <p>Room Three</p>
+      <input type="text" id="hi">
+      <button onclick="addRmThree()">Add Guest</button>
+      <button onclick="removeRmThree()">Remove Guest</button>
+      <ol class="guestListThree"></ol>
+    </div>
+    <div id="roomFour">
+      <p>Room Four</p>
+      <input type="text" id="w">
+      <button onclick="addRmFour()">Add Guest</button>
+      <button onclick="removeRmFour()">Remove Guest</button>
+      <ol class="guestListFour"></ol>
+    </div>
+  </body>
+</html>
