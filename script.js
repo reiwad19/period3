@@ -1,11 +1,26 @@
-function sayHello() {
-  //I am creating a function called sayHello//
-  var firstName = prompt("Please enter your first name.");
-  var nickName = prompt("What is your nickname?");
-  var lastName = prompt("Please enter your last name");
-  //Create a variable called firstName and stores the users information//
-  //Created 3 variables to store users first middle and last name//
-  window.alert("Welcome " + " " + firstName + " " + nickName + " " + lastName);
-  
-  
-}
+ var a = "";
+ var names = ["a"];
+ 
+ function abc(event) {
+   if(window.event.keyCode == 13) {
+     saveName();
+   }
+ }
+ function saveName() {
+   var a = document.getElementById('hello').value;
+   names.push(a);
+   document.getElementById('hello').value = "";
+ }
+ function nextPage() {
+   localStorage.setItem("name",names);
+   location.href="two.html"
+ }
+ 
+ function submitName() {
+   var reimon = localStorage.getItem('name');
+   window.alert(reimon);
+ }
+ 
+ function goingBack() {
+   location.href="one.html"
+ }
